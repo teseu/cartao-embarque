@@ -1,0 +1,98 @@
+main {
+  background-color: #1e1e1e;
+  display: flex;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  font-family: Rubik;
+}
+
+.container {
+  background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+  border-radius: 32px;
+}
+
+.modelo1 .container__util {
+  left: calc(50% - 327px/2);
+  top: calc(50% - 656px/2);
+}
+
+.modelo2 .container__util {
+  left: calc(50% - 327px/2 - 0.5px);
+  top: calc(50% - 656px/2);
+}
+
+.titulo {
+  color: #bdbdbd;
+  margin-bottom: .5rem;
+}
+
+.modelo1 .container {
+  width: 375px;
+  height: 812px;
+}
+
+.modelo2 .container {
+  width: 1280px;
+  height: 812px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.border-b-ticket {
+  border-bottom: 2px dashed #bcbcbc;
+}
+
+.board-time .description {
+  color: white;
+  text-align: center;
+  padding: .3rem;
+  width: max-content;
+  gap: 8px;
+  background: #633BBC;
+  border-radius: 8px;
+}
+
+.airport {
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: 20px;
+  width: !00%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: white;
+  opacity: 0.64;
+}
+
+// borders inverted
+
+.flight-info {
+}
+
+.inverted {
+  background:
+  radial-gradient(circle 20px at top left, rgb(99,59,188,.9) 99%, #fff 100%),
+  radial-gradient(circle 20px at top right, rgb(99,59,188,.9) 99%, #fff 100%),
+  radial-gradient(circle 20px at bottom right,  rgb(99,59,188,.9) 99%, #fff 100%),
+  radial-gradient(circle 20px at bottom left, rgb(99,59,188,.9) 99%, #fff 100%);
+	background: #fff;
+}

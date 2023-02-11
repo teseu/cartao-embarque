@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Cartão de embarque</title>
+</head>
+
+<body>
+  <main>
+    <div class="modelo1">
+      <div class="titulo">Boarding pass - Modelo 1</div>
+      <div class="container relative">
+        <div class="container__util flex flex-col mx-auto w-[327px] h-[656px] absolute">
+          <div class="container__titulo text-white font-bold text-center mb-4">
+            Cartão de embarque
+          </div>
+          <div class="ticket">
+            <div class="flight-info bg-white flex flex-col py-6 px-8 rounded-2xl border-b-ticket">
+              <div class="container__flight-info--general flex justify-between mb-5">
+                <div class="flight__number flex- flex-col">
+                  <div class="label">Voo</div>
+                  <div class="description">RS995</div>
+                </div>
+                <div class="flight__date">
+                  <div class="label text-right">Data</div>
+                  <div class="description text-right">23/05/2023</div>
+                </div>
+              </div>
+              <div class="container__flight-info--location flex justify-between">
+                <div class="departure flex flex-col">
+                  <div class="label">São Paulo, Brasil</div>
+                  <div class="airport text-4xl">GRU</div>
+                  <div class="hour">17:00</div>
+                </div>
+                <div class="flex">
+                  <img src="/assets/img/plane.svg" alt="plane icon">
+                </div>
+                <div class="arrival flex flex-col">
+                  <div class="label text-right">São Francisco</div>
+                  <div class="airport text-4xl text-right">SFO</div>
+                  <div class="hour text-right">04:48<span class="align-super text-xs">+1</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="divide-y-2 divide-dashed"></div>
+            <div class="passanger-info bg-white rounded-2xl py-6 px-8 flex justify-between border-b-ticket">
+              <div class="passanger-name">
+                <div class="label">Passageiro</div>
+                <div class="description">Rodrigo Terron</div>
+              </div>
+              <div class="passanger-seat">
+                <div class="label text-right">Assento</div>
+                <div class="description text-right">28A</div>
+              </div>
+            </div>
+            <div class="divide-y-2 divide-dashed"></div>
+            <div class="boarding-info flex flex-col">
+              <div class="container__boarding-info bg-white rounded-2xl py-6 px-8 flex flex-col items-center">
+                <div class="flex justify-between w-full">
+                  <div class="boarding-info--general">
+                    <div class="board-time mb-4">
+                      <div class="label">Embarque</div>
+                      <div class="description">16:15</div>
+                    </div>
+                    <div class="board-termina mb-4">
+                      <div class="label">Terminal</div>
+                      <div class="description">2</div>
+                    </div>
+                    <div class="gate">
+                      <div class="label">Portão</div>
+                      <div class="description">15</div>
+                    </div>
+                  </div>
+                  <div class="qr-code">
+                    <div class="qr-code--img">
+                      <img src="./assets/img/QRCode.svg" alt="qrcode" srcset="./assets/img/QRCode.svg">
+                    </div>
+                    <div class="label qr-code--text text-right">Grupo de embarque: 3</div>
+                  </div>
+                </div>
+                <div class="container__boarding-info--text mt-4 text-sm">
+                  <strong>Atenção:</strong> o portão fecha 16:45
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">Qualquer problema procure o balcão de atendimento da sua companhia aérea</div>
+        </div>
+      </div>
+    </div>
+    <div class="modelo2">
+      <div class="titulo">Boarding pass - Modelo 2</div>
+      <div class="container relative">
+        <div class="container__util flex flex-col mx-auto w-[327px] h-[656px] absolute">
+          <div class="container__titulo text-white font-bold text-center mb-4">
+            Cartão de embarque
+          </div>
+          <div class="ticket">
+            <div class="flight-info inverted flex flex-col py-6 px-8 rounded-2xl border-b-ticket">
+              <div class="container__flight-info--general flex justify-between mb-5">
+                <div class="flight__number flex- flex-col">
+                  <div class="label">Voo</div>
+                  <div class="description">RS995</div>
+                </div>
+                <div class="flight__date">
+                  <div class="label text-right">Data</div>
+                  <div class="description text-right">23/05/2023</div>
+                </div>
+              </div>
+              <div class="container__flight-info--location flex justify-between">
+                <div class="departure flex flex-col">
+                  <div class="label">São Paulo, Brasil</div>
+                  <div class="airport text-4xl">GRU</div>
+                  <div class="hour">17:00</div>
+                </div>
+                <div class="flex">
+                  <img src="/assets/img/plane.svg" alt="plane icon">
+                </div>
+                <div class="arrival flex flex-col">
+                  <div class="label text-right">São Francisco</div>
+                  <div class="airport text-4xl text-right">SFO</div>
+                  <div class="hour text-right">04:48<span class="align-super text-xs">+1</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="divide-y-2 divide-dashed"></div>
+            <div class="passanger-info inverted rounded-2xl py-6 px-8 flex justify-between border-b-ticket">
+              <div class="passanger-name">
+                <div class="label">Passageiro</div>
+                <div class="description">Rodrigo Terron</div>
+              </div>
+              <div class="passanger-seat">
+                <div class="label text-right">Assento</div>
+                <div class="description text-right">28A</div>
+              </div>
+            </div>
+            <div class="divide-y-2 divide-dashed"></div>
+            <div class="boarding-info flex flex-col">
+              <div class="container__boarding-info bg-white rounded-2xl py-6 px-8 flex flex-col items-center">
+                <div class="flex justify-between w-full">
+                  <div class="boarding-info--general">
+                    <div class="board-time mb-4">
+                      <div class="label">Embarque</div>
+                      <div class="description">16:15</div>
+                    </div>
+                    <div class="board-termina mb-4">
+                      <div class="label">Terminal</div>
+                      <div class="description">2</div>
+                    </div>
+                    <div class="gate">
+                      <div class="label">Portão</div>
+                      <div class="description">15</div>
+                    </div>
+                  </div>
+                  <div class="qr-code">
+                    <div class="qr-code--img">
+                      <img src="./assets/img/QRCode.svg" alt="qrcode" srcset="./assets/img/QRCode.svg">
+                    </div>
+                    <div class="label qr-code--text text-right">Grupo de embarque: 3</div>
+                  </div>
+                </div>
+                <div class="container__boarding-info--text mt-4 text-sm">
+                  <strong>Atenção:</strong> o portão fecha 16:45
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">Qualquer problema procure o balcão de atendimento da sua companhia aérea</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
